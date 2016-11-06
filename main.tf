@@ -11,3 +11,7 @@ resource "aws_instance" "packer" {
     Name = "Custom-AMI-Packer"
   }
 }
+
+output "address" {
+  value = "${aws_instance.packer.public_ip}"
+}
