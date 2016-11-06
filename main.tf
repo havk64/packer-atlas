@@ -7,5 +7,7 @@ provider "aws" {
 resource "aws_instance" "packer" {
   ami = "ami-5df2d34a"
   instance_type = "t2.micro"
+  tags {
+    Name = "Custom-AMI-Packer"
+  }
 }
-  
