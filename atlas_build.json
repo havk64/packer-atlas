@@ -23,5 +23,11 @@
     }],
   "push": {
     "name": "oliveira/packer-tutorial"
-  }
+  },
+  "post-processors": [{
+    "type": "atlas",
+    "artifact": "oliveira/packer-tutorial",
+    "artifact_type": "amazon.image"
+    }]
+
 }
